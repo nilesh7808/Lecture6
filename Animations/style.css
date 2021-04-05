@@ -1,0 +1,52 @@
+div {
+    height: 30px;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: palevioletred;
+    animation-name: swing;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    /* animation-delay: 1s; */
+    /* animation-direction: alternate-reverse; */
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+
+/* @keyframes swing {
+    from {
+        height: 30px;
+    }
+    to {
+        height: 500px;
+    }
+} */
+
+@keyframes swing {
+    0% {
+        /* width: 300px; */
+        height: 30px;
+        /* animation-delay: 2s; */
+        background-color: black;
+    }
+    25% {
+        width: 350px;
+        height: 300px;
+        background-color: red;
+    }
+    50% {
+        width: 400px;
+        height: 350px;
+        background-color: orange;
+    }
+    75% {
+        width: 450px;
+        height: 500px;
+        background-color: orangered;
+    }
+    100% {
+        width: 500px;
+        height: 600px;
+        background-color: crimson;
+    }
+}

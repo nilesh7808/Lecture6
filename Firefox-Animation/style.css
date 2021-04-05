@@ -1,0 +1,29 @@
+div img {
+    height: 150px;
+    width: 150px;
+    animation: rotate 2s infinite alternate;
+}
+
+div {
+    height: 150px;
+    width: 150px;
+    /* transition: all; */
+    margin: 20px auto;
+    align-items: center;
+    animation: fall 0.8s alternate infinite ease-in;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(520px);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
